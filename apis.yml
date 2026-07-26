@@ -1,8 +1,13 @@
 aid: diamond
 name: Diamond
-description: 'Diamond is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Diamond (diamond.io) is an early-stage, managed serverless data backend for teams,
+  positioned as "your project, but with AI." The product promises a world-class serverless database
+  where teams bring their own data sources, AI-assisted setup so no schema configuration is required,
+  team collaboration with role management, and single sign-on via Google, Microsoft, and LDAP. As of
+  this profile the public surface is a pre-launch landing page with a "create your workspace" signup
+  form and a sign-in page; no developer portal, API documentation, SDKs, pricing, changelog, or status
+  page are published yet. Diamond Inc. is a portfolio company of Partech. This profile was added to the
+  API Evangelist network as a lead and enriched from the provider''s public web surface.'
 url: https://raw.githubusercontent.com/api-evangelist/diamond/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +15,30 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.diamond.io/logo.svg
 tags:
 - Company
-- Infrastructure Saas
+- Infrastructure SaaS
+- Database
+- Serverless
+- Data Backend
+- Managed Backend
+- Artificial Intelligence
+- SSO
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/diamond-domain-security.yml
 - type: Website
   url: https://www.diamond.io/
+- type: Login
+  url: https://www.diamond.io/sign-in
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
